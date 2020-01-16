@@ -34,7 +34,7 @@ public class AutorController {
 		return cdcServico.getListaAutores();
 	}
 	
-	@PostMapping()
+	@PostMapping
 	@Transactional
 	public ResponseEntity<String> cadastrarAutor(@RequestBody CadastroAutorCmd cmd){
 		cdcServico.cadastrarAutor(cmd);
